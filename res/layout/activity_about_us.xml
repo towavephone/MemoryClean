@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:weather="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/application_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <ImageView
+                android:id="@+id/brand"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30.0dip"
+                android:contentDescription="@null"
+                android:onClick="showChangeLog"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/subVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brand"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:includeFontPadding="false"
+                android:text="V1.2"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/app_information"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subVersion"
+                android:layout_gravity="center"
+                android:layout_marginTop="20.0dip"
+                android:duplicateParentState="true"
+                android:linksClickable="true"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="5dip"
+                android:singleLine="false"
+                android:text="@string/app_information"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/upgradeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_below="@id/app_information"
+                android:layout_marginTop="20.0dip"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="程序设计:"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="towave and tianwailaike"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/upgradeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_below="@id/upgradeLayout"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="UI设计:"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="ME"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_below="@id/upgradeLayout1"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="Email"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:duplicateParentState="true"
+                    android:gravity="center"
+                    android:linksClickable="true"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:text="634407147@qq.com"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20.0dip"
+                android:gravity="bottom|center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/all_rights_reserved"
+                android:textColor="#ffbbbbbb"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

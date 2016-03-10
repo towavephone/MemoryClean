@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MemoryClean</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_application__detail">详情</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="title_activity_global__config">设置</string>
+    <string name="share">分享</string>
+    <string name="about_us">关于我们</string>
+    <string name="title_activity_white_list">白名单</string>
+    <string name="app_information">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\
+        亲！么么！Memoryclean V1.0版。高效、快速、准确的清理不必要后台程序，提升手机运行速度。保证安全的前提下提升手机的运行速度
+        由于时间仓促，错误与疏忽之处在所难免, 如果各位亲能给出宝贵的建议与指点,那将是极好的哦！么么哒！</string>
+    <string name="all_rights_reserved">Copyright © 2012-2015 wust. All Rights Reserved.</string>
+    <string name="title_activity_about_us">About_us</string>
+
+</resources>

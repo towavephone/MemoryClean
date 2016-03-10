@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#330033ED"
+        android:padding="5dp"
+        android:text="一键清理设置"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/includewhitelist_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="包含白名单"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/includewhitelist"
+            style="@style/MyCheckBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/includesystemapp_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="包含系统应用"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/includesystemapp"
+            style="@style/MyCheckBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</LinearLayout>

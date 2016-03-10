@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/dialog_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remenber"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/dialog_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bluebuttonstyle"
+            android:text="确定"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/greenbuttonstyle"
+            android:text="取消"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/remenber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exit"
+        android:text="记住"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/exit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_message"
+        android:text="退出后关闭该应用"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

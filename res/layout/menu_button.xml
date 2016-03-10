@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/turnto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="切换到"
+        android:background="@drawable/bluebuttonstyle"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="详细信息"
+        android:background="@drawable/bluebuttonstyle"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/uninstall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="卸载"
+        android:background="@drawable/purplebuttonstyle"
+        android:textColor="@color/white" />
+
+</LinearLayout>

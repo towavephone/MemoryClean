@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    tools:context="com.memoryclean.activity.WhiteListActivity" >
+
+    <com.memoryclean.views.XListView
+        android:id="@+id/white_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textview1"
+        android:divider="@color/darkgray"
+        android:dividerHeight="0.5dp" >
+    </com.memoryclean.views.XListView>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#330033ED"
+        android:gravity="center"
+        android:text="点击对应项忽略或解除忽略"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

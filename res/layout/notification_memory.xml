@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semitransparent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="4" >
+
+    <RelativeLayout
+        android:id="@+id/launch_main"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="内存检测"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.01"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/launch_clean"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/used_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="已用内存"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.01"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/switch_state_total"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/clean_memory_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/hint_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="今日释放"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.01"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/launch_settings"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="3dp" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/icon_settings"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="设置"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

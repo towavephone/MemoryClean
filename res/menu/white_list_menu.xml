@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/action_search"
+        android:queryHint="输入应用名称搜索"
+        android:showAsAction="ifRoom|collapseActionView"/>
+
+</menu>

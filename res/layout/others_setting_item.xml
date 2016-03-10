@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#330033ED"
+            android:padding="5dp"
+            android:text="其他设置"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/remenberview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:text="退出时记住"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/remenber"
+                style="@style/MyCheckBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/showwhitelist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:text="查看白名单"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/aboutus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dp"
+            android:text="关于我们"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

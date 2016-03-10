@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/hint_clean_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#330033ED"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="本日释放:0.00M,全部释放:0.00M"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/clear_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/purplebuttonstyle"
+        android:text="清理日志"
+        android:textColor="@color/white" />
+
+    <com.memoryclean.views.XListView
+        android:id="@+id/logs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/clear_log"
+        android:layout_below="@+id/hint_clean_total"
+        android:divider="@color/darkgray"
+        android:dividerHeight="0.5dp" >
+    </com.memoryclean.views.XListView>
+
+</RelativeLayout>

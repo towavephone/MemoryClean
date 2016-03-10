@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/application_background"
+    tools:context=".RunningAppDetail" >
+
+    <LinearLayout
+        android:id="@+id/application_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/application_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+
+            <CheckBox
+                android:id="@+id/join_whiteList"
+                style="@style/MyCheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/application_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/application_pkgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="包名:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/application_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uid:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/program_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/kill_programe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/purplebuttonstyle"
+            android:text="杀掉该程序"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/application_expandablelistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/program_menu"
+        android:layout_below="@+id/application_message" />
+
+</RelativeLayout>
